@@ -332,9 +332,6 @@ main {
     .card > .container {
         justify-content: center;
     }
-    .button-more {
-        margin: 10px 0px;
-    }
 }
 
 @keyframes is-rotate-hora {
