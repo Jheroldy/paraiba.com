@@ -19,7 +19,9 @@ var juros = [
 function cancel_simu() {
     simulator.style.display = 'none'
 }
-
+function cancel_all() {
+    simulator.style.display = 'none'
+}
 function confirm_simu() {
     let C = parseInt(capital.textContent.replace(/[.]/g, '').replace(/[,]/g, '.'), 10);
     let ParNum = parcela.value;
@@ -68,5 +70,3 @@ function var_min() {
     
     
 }
-
-console.log()
