@@ -93,7 +93,8 @@ get(pathData)
 
     //#BOTÃO SIMULAR COMPRA
     var btn2 = document.createElement('button');
-    btn2.id = 'btn_storeSimulator'
+    btn2.id = 'btn_storeSimulator';
+    btn2.disabled = true;
 
     //#ICONE WHATSAPP
     var ico1 = document.createElement('ion-icon');
