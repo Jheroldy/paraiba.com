@@ -40,7 +40,7 @@ get(pathData)
     var key = dados.key
     var img = dados.img;
     var infor = dados.infor;
-    var preco = dados.preco;
+    var preco = dados.preco + dados.garantiaMax;
     var titulo = dados.titulo;
     var saldo = dados.saldo;
     var hora = new Date().getHours();
