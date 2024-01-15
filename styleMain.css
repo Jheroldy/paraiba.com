@@ -266,6 +266,7 @@ main {
 #btn_storeSimulator:disabled {
     background-color: #cecece;
     border: none;
+    cursor: no-drop;
 }
 #btn_storeSimulator span {
     font-size: 1.1em;
