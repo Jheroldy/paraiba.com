@@ -76,7 +76,7 @@ get(pathData)
     //#PREÇO
     var etiq = document.createElement('span');
     etiq.classList.add('preco');
-    etiq.innerText = preco.toLocaleString();
+    etiq.innerText = preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
 
     //#CODIGO
     var cod = document.createElement('span');
