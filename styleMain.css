@@ -332,6 +332,9 @@ main {
     .card > .container {
         justify-content: center;
     }
+    .logo {
+        height: 70%;
+    }
 }
 
 @keyframes is-rotate-hora {
