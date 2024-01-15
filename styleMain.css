@@ -263,6 +263,10 @@ main {
     color: #fff;
     border: solid 1px var(--color-main3);
 }
+#btn_storeSimulator:disabled {
+    background-color: #cecece;
+    border: none;
+}
 #btn_storeSimulator span {
     font-size: 1.1em;
 }
