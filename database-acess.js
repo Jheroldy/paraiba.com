@@ -36,6 +36,7 @@ get(pathData)
     var preco = dados.preco;
     var titulo = dados.titulo;
     var saldo = dados.saldo;
+    var garantia = dados.garantiaMax;
     var hora = new Date().getHours();
 
     //CRIANDO ELEMENTOS
@@ -69,7 +70,7 @@ get(pathData)
     //#PREÇO
     var etiq = document.createElement('span');
     etiq.classList.add('preco');
-    etiq.innerText = preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
+    etiq.innerText = (preco + garantia).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
 
     //#CODIGO
     var cod = document.createElement('span');
