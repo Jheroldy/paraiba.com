@@ -80,7 +80,7 @@ main {
     justify-content: center;
     align-items: center;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #1a1a1ab0;
     z-index: 100;
@@ -264,14 +264,14 @@ main {
     border: solid 1px var(--color-main3);
 }
 #btn_storeSimulator:disabled {
-    background-color: #cecece;
+    background-color: #dddddd;
+    color: #b8b8b8;
     border: none;
-    cursor: no-drop;
 }
 #btn_storeSimulator span {
     font-size: 1.1em;
 }
-#btn_storeSimulator:hover {
+#btn_storeSimulator:not([disabled]):hover {
     background-color: #fff;
     color: var(--color-main3);
 }
@@ -319,6 +319,7 @@ main {
     box-shadow: inset 0px 0px 6px #000000c4;
     cursor: no-drop;
 }
+
 /*MOBILE*/
 @media screen and (max-width: 500px) {
     #secao {
@@ -337,9 +338,6 @@ main {
     .card > .container {
         justify-content: center;
     }
-    .logo {
-        height: 70%;
-    }
 }
 
 @keyframes is-rotate-hora {
@@ -354,3 +352,4 @@ main {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
+
