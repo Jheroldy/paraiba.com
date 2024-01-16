@@ -22,13 +22,6 @@ const storage = getStorage();
 const pathData = ref(database, 'catalago/grupo13/celular/');
 const pathStorage = ref(database, 'catalago/imagens/');
 
-/*getDownloadURL(pathStorage)
-.then((url) => {
-  console.log(url)
-})
-.catch((err) => {
-  console.error("Erro ao obter a URL", err)
-})*/
 
 get(pathData)
 .then((sucess) => {
@@ -40,7 +33,7 @@ get(pathData)
     var key = dados.key
     var img = dados.img;
     var infor = dados.infor;
-    var preco = dados.preco + dados.garantiaMax;
+    var preco = dados.preco;
     var titulo = dados.titulo;
     var saldo = dados.saldo;
     var hora = new Date().getHours();
@@ -76,7 +69,7 @@ get(pathData)
     //#PREÇO
     var etiq = document.createElement('span');
     etiq.classList.add('preco');
-    etiq.innerText = preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
+    etiq.innerText = preco;
 
     //#CODIGO
     var cod = document.createElement('span');
