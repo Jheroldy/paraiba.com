@@ -67,19 +67,26 @@ function var_min() {
     } 
 }
 function chaging() {
-    let input = document.querySelector("#input_fake").innerText;
     let cards = document.querySelectorAll('.card');
-    let sec = document.querySelectorAll('#secao');
+    let input = document.querySelector("#input_fake").innerText;
     let err = document.querySelector('#search_err');
-    
+    let limpo = true
     cards.forEach((elem) => {
+        
         if(elem.getAttribute("data-hashtag").includes(input.toLowerCase())){
             elem.style.display = "flex"
             err.style.display = "none"
         }else{
             elem.style.display = "none"
         }
-        
-        
-    })
+    });
+    for (var i = 0; i < cards.length; i++) {
+        if (cards[i].offsetWidth > 0 && cards[i].offsetHeight > 0) {
+            limpo = false;
+            break;
+        }
+    }
+    if(limpo) {
+        err.style.display = "flex"
+    }
 }
