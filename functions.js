@@ -73,11 +73,13 @@ function chaging() {
     let err = document.querySelector('#search_err');
     
     cards.forEach((elem) => {
-        if(elem.getAttribute("data-hashtag").includes(input.toLowerCase()){
+        if(elem.getAttribute("data-hashtag").includes(input.toLowerCase())){
             elem.style.display = "flex"
             err.style.display = "none"
         }else{
             elem.style.display = "none"
         }
+        
+        
     })
 }
