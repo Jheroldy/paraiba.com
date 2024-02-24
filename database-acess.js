@@ -36,6 +36,7 @@ get(pathData)
     var preco = dados.preco;
     var titulo = dados.titulo;
     var saldo = dados.saldo;
+    var hashtag = dados.htg
     var garantia = dados.garantiaMax;
     var hora = new Date().getHours();
 
@@ -44,6 +45,7 @@ get(pathData)
     //#CARD
     var card = document.createElement('div');
     card.classList.add('card');
+    card.setAttribute("data-hashtag", hashtag);
 
     //#CONTAINER
     var container = document.createElement('div');
