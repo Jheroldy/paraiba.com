@@ -2,6 +2,7 @@ const simulator = window.document.getElementById('simulator_shop');
 const capital = window.document.getElementById('produt_valor');
 const entrada = window.document.getElementById('entrada_money');
 const parcela = window.document.getElementById('parcelas_num');
+const section = window.document.querySelector('#secao');
 const valInput = window.document.getElementById('val_input');
 const valorMoney = window.document.getElementById('valor_money');
 const resultPar = window.document.getElementById('result_parcelas');
@@ -58,12 +59,27 @@ function chagingEntrada() {
             break;
     }
 }
-
+    
 function var_min() {
     let C = parseInt(capital.textContent.replace(/[.]/g, '').replace(/[,]/g, '.'), 10);
     if(valorMoney.value <= C * 0.3) {
         valorMoney.value = C * 0.3;
-    }
+    } 
+}
+function chaging() {
+    let input = document.querySelector("#input_fake");
+    let cards = document.querySelectorAll('.card');
+    let sec = document.querySelectorAll('#secao');
+    let err = document.querySelector('#search_err');
     
-    
+    cards.forEach((elem) => {
+        if(elem.getAttribute("data-hashtag").includes(input.innerText)){
+            elem.style.display = "flex"
+            err.style.display = "none"
+        }else{
+            elem.style.display = "none"
+        }
+        
+        
+    })
 }
