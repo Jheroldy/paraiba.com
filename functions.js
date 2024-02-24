@@ -67,19 +67,17 @@ function var_min() {
     } 
 }
 function chaging() {
-    let input = document.querySelector("#input_fake");
+    let input = document.querySelector("#input_fake").innerText;
     let cards = document.querySelectorAll('.card');
     let sec = document.querySelectorAll('#secao');
     let err = document.querySelector('#search_err');
     
     cards.forEach((elem) => {
-        if(elem.getAttribute("data-hashtag").includes(input.innerText)){
+        if(elem.getAttribute("data-hashtag").includes(input.toLowerCase()){
             elem.style.display = "flex"
             err.style.display = "none"
         }else{
             elem.style.display = "none"
         }
-        
-        
     })
 }
