@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="https://lh3.googleusercontent.com/ogw/ANLem4aZCMUFZk6xNIQSWJnHdql6Z9GY9f2DzaL42fbZ=s32-c-mo" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://jheroldy.github.io/paraiba.com/styleMain.css">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--<link rel="stylesheet" href="styleMain.css">-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div id="simulator_shop">
@@ -82,13 +84,8 @@
         <header>
             <img class="logo" src="https://catalogo.armazemparaiba.com.br/public/img/logo-catalogos-nova-branca.svg" alt="img">
             <div class="cam-filter">
-                <span>Filtro</span>
-                <ion-icon name="funnel"></ion-icon>
-                <select id="filtro">
-                    <option value=""></option>
-                    <option value="">Preço</option>
-                    <option value="">Preço</option>
-                </select>
+                <div contenteditable="true" oninput="chaging()" id="input_fake" class="input-fake search-input"></div>
+                <ion-icon name="search-outline"></ion-icon>
             </div>
         </header>
         <main>
@@ -97,6 +94,11 @@
                     <div class="logo_loading1"></div>
                     <div class="logo_loading2"></div>
                     <div class="logo_loading3"></div>
+                </div>
+                <div id="search_err">
+                    <img class="img-err" src="https://img.freepik.com/vector-premium/icono-analisis-riesgo-estilo-comic-ilustracion-vector-dibujos-animados-lupa-exclamacion-sobre-fondo-blanco-aislado-concepto-negocio-efecto-salpicadura-atencion_157943-14728.jpg" alt="img-error">
+                    <h1>Ops!</h1>
+                    <p>item não encontrado</p>
                 </div>
             </section>
         </main>
@@ -114,6 +116,8 @@
         }, 1000)
     </script>
     <script type="module" src="https://jheroldy.github.io/paraiba.com/database-acess.js"></script>
-    <script src="https://jheroldy.github.io/paraiba.com/functions.js"></script>
+    <!--<script type="module" src="/database-acess.js"></script>-->
+    simulator_shop<script src="https://jheroldy.github.io/paraiba.com/functions.js"></script>
+    <!--<script src="/functions.js"></script>-->
 </body>
 </html>
