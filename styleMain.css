@@ -74,6 +74,7 @@ ion-icon[name="search-outline"] {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 85%;
@@ -350,6 +351,32 @@ main {
 }
 .img-err {
     height: 100px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6%;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px #0000007a;
+    z-index: 100;
+}
+.roda-pe {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #b8b8b8;
+}
+.roda-pe >* {
+    margin: 0px 2px;
+}
+.line-pe {
+    width: 2px;
+    height: 50%;
+    background-color: #b8b8b8;
+    border: none;
 }
 /*MOBILE*/
 @media screen and (max-width: 500px) {
