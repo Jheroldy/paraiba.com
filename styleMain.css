@@ -65,8 +65,9 @@ ion-icon[name="search-outline"] {
 #infor_updata {
     position: fixed;
     color: #cecece;
-    font-size: .5em;
+    font-size: .6em;
     right: 0;
+    top: 0;
     margin: 10px;
 }
 /**/
