@@ -370,13 +370,13 @@ main {
         justify-content: center;
     }
     .logo {
-        height: 70%;
+        height: 50%;
     }
     header {
         display: flex;
         width: auto;
         height: 15%;
-        padding: 8px 10px;
+        padding: 4px 5px;
         position: relative;
         box-shadow: 0px 5px 0px var(--color-main2);
     }
