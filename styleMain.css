@@ -369,6 +369,9 @@ main {
     text-decoration: none;
     color: #b8b8b8;
 }
+.roda-pe:hover {
+    color: #ff0000;
+}
 .roda-pe >* {
     margin: 0px 2px;
 }
