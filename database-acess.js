@@ -70,7 +70,7 @@ get(pathData)
       //#SELO DE PROMOCÃO
       var selo = document.createElement("span");
       selo.classList.add("selo");
-      selo.innerText = "30% OFF";
+      selo.innerText = "15% OFF";
 
       //#PREÇO
       var etiq = document.createElement("span");
