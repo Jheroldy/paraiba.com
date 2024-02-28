@@ -6,8 +6,8 @@
     <title>Celulares</title>
     <link rel="shortcut icon" href="https://lh3.googleusercontent.com/ogw/ANLem4aZCMUFZk6xNIQSWJnHdql6Z9GY9f2DzaL42fbZ=s32-c-mo" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--<link rel="stylesheet" href="https://jheroldy.github.io/paraiba.com/styleMain.css">-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://jheroldy.github.io/paraiba.com/styleMain.css">
+   <!-- <link rel="stylesheet" href="styles.css">-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -130,41 +130,9 @@
             }
         }, 1000)
     </script>
-    <!--<script type="module" src="https://jheroldy.github.io/paraiba.com/database-acess.js"></script>-->
-    <script type="module" src="/dataBase.js"></script>
-    <!--<script src="https://jheroldy.github.io/paraiba.com/functions.js"></script>-->
-    <script src="/functions.js"></script>
+    <script type="module" src="https://jheroldy.github.io/paraiba.com/database-acess.js"></script>
+  <!--  <script type="module" src="/dataBase.js"></script>-->
+    <script src="https://jheroldy.github.io/paraiba.com/functions.js"></script>
+   <!-- <script src="/functions.js"></script>-->
 </body>
 </html>
-
-      if (saldo === 1) {
-        secao.appendChild(card);
-        card.appendChild(imag);
-        card.appendChild(container);
-        container.appendChild(container_2);
-        container.appendChild(container_3);
-        container_3.appendChild(btn2);
-        container_3.appendChild(btn1);
-        container_2.appendChild(desc);
-        container_2.appendChild(etiq);
-        container_2.appendChild(cod);
-
-        btn1.appendChild(ico1);
-        btn1.appendChild(span);
-        btn2.appendChild(ico2);
-        btn2.appendChild(span2);
-
-        if (seloPromo) {
-          card.appendChild(selo);
-        }
-
-        btn2.addEventListener("click", () => {
-          let simulator = window.document.getElementById("simulator_shop");
-          simulator.style.display = "flex";
-        });
-      }
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
