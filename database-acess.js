@@ -90,13 +90,13 @@ get(pathData)
       btn1.classList.add("button-more");
       btn1.target = "_blank";
       if (hora >= 0 && hora <= 11) {
-        btn1.href = `https://wa.me/98981092899/?text=Bom%20dia%20Cláudio,%20gostaria%20de%20saber%20mais%20sobre%20${infor}`;
+        btn1.href = `https://wa.me/98981092899/?text=Bom%20dia%20Cláudio,%20gostaria%20de%20saber%20mais%20sobre%20${infor + "-" + key}`;
       }
       if (hora >= 12 && hora <= 17) {
-        btn1.href = `https://wa.me/98981092899/?text=Boa%20tarde%20Cláudio,%20gostaria%20de%20saber%20mais%20sobre%20${infor}`;
+        btn1.href = `https://wa.me/98981092899/?text=Boa%20tarde%20Cláudio,%20gostaria%20de%20saber%20mais%20sobre%20${infor + "-" + key}`;
       }
       if (hora >= 18 && hora <= 23) {
-        btn1.href = `https://wa.me/98981092899/?text=Boa%20noite%20Cláudio,%20gostaria%20de%20saber%20mais%20sobre%20${infor}`;
+        btn1.href = `https://wa.me/98981092899/?text=Boa%20noite%20Cláudio,%20gostaria%20de%20saber%20mais%20sobre%20${infor + "-" + key}`;
       }
 
       //#BOTÃO SIMULAR COMPRA
